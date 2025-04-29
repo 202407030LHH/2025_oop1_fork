@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-int main()
+void main()
 {
     /// 포인터의 모든 것!!!!
     int a = 3;
