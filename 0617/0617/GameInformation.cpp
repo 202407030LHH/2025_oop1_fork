@@ -27,7 +27,10 @@ void GameInformation::setDraw()
 
 void GameInformation::printGameStatus()
 {
-	printf("사용자[ %d ] 컴퓨터[ %d ] 비김[ %d ]\n",
+	printf("전체[ %d ] : 사용자[ %d ] 컴퓨터[ %d ] 비김[ %d ]\n",
+		m_userWin + m_comWin + m_Draw,
 		m_userWin, m_comWin, m_Draw
 		);
+	printf("나으 이긴 확률: %.2f %%\n",
+		(float)m_userWin / (m_userWin + m_comWin + m_Draw) * 100);
 }
